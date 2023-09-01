@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.activity.LoginIntro">
+
+    <TextView
+        android:id="@+id/txtLogingSubhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isn't life is a collection of weird quizzes with\nno answers to half the questions"
+        android:textAlignment="center"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLoginHeader"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Quiz Master"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLogingSubhead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/quiz"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/txtLoginHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:background="@drawable/btn_primary"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLogingSubhead"
+        app:layout_constraintStart_toStartOf="@+id/txtLogingSubhead"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogingSubhead" />
+
+    <ImageView
+        android:src="@drawable/wave__1_"
+        android:scaleType="centerCrop"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
